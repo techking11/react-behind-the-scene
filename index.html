@@ -16,10 +16,12 @@
 </html>
 
 <script type="text/babel">
-    const Element = function(props) {
-        return <p>{props.title}</p>
+    class Element extends React.Component {
+        render() {
+            return <p>{this.props.title}</p>
+        }
     }
     
     ReactDOM.render(
-        <Element title="Technical Institute" />, document.getElementById("app"));
+        <Element title="Technology University" />, document.getElementById("app"));
 </script>
