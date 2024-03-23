@@ -9,17 +9,14 @@
     
     <div id="app"></div>
     
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 </body>
 </html>
 
-<script>
-    const element = React.createElement(
-      "p",
-      {title: "paragraph"},
-      "Information Technology"  
-    );
+<script type="text/babel">
+    const Element = <p>Information Technology</p>
     
-    ReactDOM.render(element, document.getElementById("app"));
+    ReactDOM.render(Element, document.getElementById("app"));
 </script>
