@@ -16,7 +16,10 @@
 </html>
 
 <script type="text/babel">
-    const Element = <p>Information Technology</p>
+    const Element = function(props) {
+        return <p>{props.title}</p>
+    }
     
-    ReactDOM.render(Element, document.getElementById("app"));
+    ReactDOM.render(
+        <Element title="Technical Institute" />, document.getElementById("app"));
 </script>
