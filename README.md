@@ -1,1 +1,1 @@
-# React Behind the scenes
+# React behind the scenes
