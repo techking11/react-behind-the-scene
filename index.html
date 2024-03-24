@@ -16,12 +16,22 @@
 </html>
 
 <script type="text/babel">
-    class Element extends React.Component {
+    var First = <p>First Componet</p>
+    
+    function Second(props) {
+        return <p>{props.title}</p>
+    }
+    class Third extends React.Component {
         render() {
-            return <p>{this.props.title}</p>
+            return (
+                <div>
+                    { First }
+                    <Second title="Second Component" />  
+                </div>
+            );
         }
     }
     
     ReactDOM.render(
-        <Element title="Technology University" />, document.getElementById("app"));
+        <Third />, document.getElementById("app"));
 </script>
