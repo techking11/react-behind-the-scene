@@ -3,35 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Background Process</title>
+    <title>React easier</title>
 </head>
 <body>
-    
     <div id="app"></div>
-    
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
-
-<script type="text/babel">
-    var First = <p>First Componet</p>
-    
-    function Second(props) {
-        return <p>{props.title}</p>
-    }
-    class Third extends React.Component {
-        render() {
-            return (
-                <div>
-                    { First }
-                    <Second title="Second Component" />  
-                </div>
-            );
-        }
-    }
-    
-    ReactDOM.render(
-        <Third />, document.getElementById("app"));
-</script>
